@@ -12,5 +12,5 @@ ORS=""
 print "charset_table = A..Z->a..z,a..z,0..9"
 } {
 print ","
-printf("U+%0.4d", $1); print "->" tolower($4)
+print "U+" $1 "->" tolower($4)
 } END { print "\n" }' 
